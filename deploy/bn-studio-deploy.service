@@ -1,0 +1,8 @@
+[Unit]
+Description=Deploy the latest BN Studio website from GitHub
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/deploy-bn-studio
