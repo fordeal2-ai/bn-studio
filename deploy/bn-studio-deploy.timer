@@ -1,0 +1,11 @@
+[Unit]
+Description=Check GitHub for BN Studio website updates
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=60s
+Unit=bn-studio-deploy.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
